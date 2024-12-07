@@ -5,6 +5,8 @@ titanic_link = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/ti
 
 titanic_data = pd.read_csv(titanic_link)
 
+st.title("Gráficos del Titanic")
+
 fig, ax = plt.subplots()
 ax.hist(titanic_data.fare)
 st.header("Histograma del Titanic")
